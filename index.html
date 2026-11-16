@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="rclone-personal: a personal desktop configuration for accessing Google Drive on Ubuntu.">
+  <title>rclone-personal — Personal Google Drive access</title>
+  <style>
+    :root { color-scheme: light dark; --bg: #faf9f6; --text: #202c38; --muted: #59636f; --line: #d8dce0; --link: #235bb1; }
+    @media (prefers-color-scheme: dark) { :root { --bg: #151b22; --text: #e1e7ef; --muted: #aab5c2; --line: #35404c; --link: #9cc1ff; } }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.7 system-ui, sans-serif; }
+    header, main, footer { max-width: 46rem; margin: auto; padding: 1.5rem; }
+    header { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; border-bottom: 1px solid var(--line); }
+    header strong { margin-right: auto; }
+    nav { display: flex; gap: 1rem; }
+    a { color: var(--link); text-underline-offset: .2em; overflow-wrap: anywhere; }
+    a:focus-visible { outline: 3px solid var(--link); outline-offset: 4px; }
+    h1 { font-size: clamp(1.8rem, 5vw, 2.6rem); line-height: 1.2; letter-spacing: -.03em; }
+    h2 { font-size: 1.2rem; margin-top: 2rem; }
+    .intro { font-size: 1.15rem; }
+    li { margin: .45rem 0; }
+    footer { color: var(--muted); border-top: 1px solid var(--line); font-size: .9rem; }
+    code { font-size: .9em; }
+  </style>
+</head>
+<body>
+  <header>
+    <strong>rclone-personal</strong>
+    <nav aria-label="Main navigation">
+      <a href="./" aria-current="page">Home</a>
+      <a href="privacy.html">Privacy policy</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Personal access to Google Drive on Ubuntu</h1>
+    <p class="intro">rclone-personal is a desktop configuration of the open-source <a href="https://rclone.org/">rclone</a> tool, maintained by <a href="https://github.com/dvpetrov0">dvpetrov0</a> for personal use.</p>
+    <p>Its purpose is to make an authorized Google Drive account accessible through a mounted folder on the owner's Ubuntu computer. Files can be opened in desktop applications and managed through the file manager.</p>
+
+    <h2>What the connection does</h2>
+    <ul>
+      <li>Lists files and folders and reads their metadata and contents.</li>
+      <li>Creates, uploads, updates, renames, moves, or deletes files when the owner or a desktop application performs those operations in the mounted folder.</li>
+      <li>Retrieves file contents as needed and uses a local cache according to the desktop configuration.</li>
+    </ul>
+
+    <h2>Authorization and data handling</h2>
+    <p>The owner grants access through Google's OAuth authorization screen. The desktop client communicates with the Google Drive API; this informational website does not handle the sign-in process or receive Drive files or authorization tokens.</p>
+    <p>The requested <code>drive</code> permission enables access to existing files and supports both reading and writing. The <a href="privacy.html">privacy policy</a> explains how this personal configuration handles the data.</p>
+
+    <h2>Owner and contact</h2>
+    <p>This personal configuration is maintained by the owner of the <a href="https://github.com/dvpetrov0/rclone-personal">dvpetrov0/rclone-personal repository</a>. Questions about the configuration or this policy can be submitted through the repository's <a href="https://github.com/dvpetrov0/rclone-personal/issues">Issues page</a>.</p>
+  </main>
+  <footer>
+    <p>A personal configuration maintained independently of Google and the rclone project. <a href="privacy.html">Privacy policy</a></p>
+  </footer>
+</body>
+</html>

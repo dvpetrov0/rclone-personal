@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy policy for the personal rclone-personal desktop configuration maintained by dvpetrov0.">
+  <title>Privacy policy — rclone-personal</title>
+  <style>
+    :root { color-scheme: light dark; --bg: #faf9f6; --text: #202c38; --muted: #59636f; --line: #d8dce0; --link: #235bb1; }
+    @media (prefers-color-scheme: dark) { :root { --bg: #151b22; --text: #e1e7ef; --muted: #aab5c2; --line: #35404c; --link: #9cc1ff; } }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.7 system-ui, sans-serif; }
+    header, main, footer { max-width: 46rem; margin: auto; padding: 1.5rem; }
+    header { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; border-bottom: 1px solid var(--line); }
+    header strong { margin-right: auto; }
+    nav { display: flex; gap: 1rem; }
+    a { color: var(--link); text-underline-offset: .2em; overflow-wrap: anywhere; }
+    a:focus-visible { outline: 3px solid var(--link); outline-offset: 4px; }
+    h1 { font-size: clamp(1.8rem, 5vw, 2.6rem); line-height: 1.2; letter-spacing: -.03em; }
+    h2 { font-size: 1.2rem; margin-top: 2rem; }
+    .date, footer { color: var(--muted); font-size: .9rem; }
+    footer { border-top: 1px solid var(--line); }
+  </style>
+</head>
+<body>
+  <header>
+    <strong>rclone-personal</strong>
+    <nav aria-label="Main navigation">
+      <a href="./">Home</a>
+      <a href="privacy.html" aria-current="page">Privacy policy</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Privacy policy</h1>
+    <p class="date">Effective date: 17 November 2026</p>
+    <p>This policy describes <a href="index.html">rclone-personal</a>, a personal desktop configuration of rclone maintained by <a href="https://github.com/dvpetrov0">dvpetrov0</a>.</p>
+
+    <h2>Google data accessed and its purpose</h2>
+    <p>After the owner authorizes a Google account, the desktop client can access Drive file and folder metadata and file contents. It uses this access to display a mounted folder and carry out file operations requested by the owner or applications accessing that folder. Operations may include reading, downloading, creating, uploading, updating, renaming, moving, and deleting files.</p>
+    <p>Google handles account sign-in. The desktop client stores OAuth credentials and authorization tokens to maintain the connection; it does not collect the owner's Google password.</p>
+
+    <h2>Storage, transfers, and sharing</h2>
+    <p>The desktop client exchanges data with Google's services over HTTPS. Its configuration, tokens, and any file cache are stored locally on the owner's computer. Files opened through the mounted folder are also accessible to the desktop applications chosen by the owner.</p>
+    <p>This personal configuration does not operate a separate server for receiving Drive files. Its operator does not sell Google user data or use it for advertising, profiling, or training AI models. This informational GitHub Pages website receives no Drive files or OAuth credentials.</p>
+
+    <h2>Retention and removal</h2>
+    <p>Local cache retention follows the rclone settings. The owner can remove cached files after pending uploads have completed and remove saved credentials when disconnecting the configuration. Google Drive files remain subject to the owner's actions in Drive or the mounted folder.</p>
+    <p>Access can be revoked through <a href="https://myaccount.google.com/connections">Google Account connections</a>. Revocation prevents continued authorized access; it does not itself erase files already cached on the computer.</p>
+
+    <h2>Google API data use</h2>
+    <p>Information received through Google APIs is used only to provide this personal file-access function, in accordance with the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a> and its Limited Use requirements.</p>
+
+    <h2>This website</h2>
+    <p>These static pages contain no sign-in form, analytics scripts, or advertising. GitHub provides the hosting and may process technical request information, such as IP addresses, under the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</p>
+
+    <h2>Contact and updates</h2>
+    <p>The configuration's owner can be contacted through <a href="https://github.com/dvpetrov0/rclone-personal/issues">the repository's Issues page</a>. Any changes to these data practices will be reflected in this policy and its effective date.</p>
+  </main>
+  <footer>
+    <p><a href="index.html">Back to rclone-personal</a></p>
+  </footer>
+</body>
+</html>
